@@ -1,0 +1,28 @@
+{
+  "name": "challenge-automation-mchc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:qa": "cross-env TEST_ENV=QA playwright test",
+    "test:cert": "cross-env TEST_ENV=CERT playwright test",
+    "test:pokemon": "cross-env TEST_ENV=QA playwright test tests/pokemon.spec.ts",
+    "test:posts": "cross-env TEST_ENV=QA playwright test tests/posts.spec.ts",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "xlsx": "^0.18.5"
+  }
+}
